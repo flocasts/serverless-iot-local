@@ -13,7 +13,7 @@ const evalInContext = require('./eval')
 const createMQTTBroker = require('./broker')
 // TODO: send PR to serverless-offline to export this
 const functionHelper = require('serverless-offline/src/functionHelper')
-const createLambdaContext = require('serverless-offline/src/createLambdaContext')
+const createLambdaContext = require('serverless-offline/src/LambdaContext')
 const VERBOSE = typeof process.env.SLS_DEBUG !== 'undefined'
 const defaultOpts = {
   host: 'localhost',
